@@ -41,8 +41,8 @@
 // ];
 // export default createBrowserRouter(routes)
 
-import React, { createContext, useContext, useState } from 'react';
-import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom';
+import React from 'react';
+import { createBrowserRouter, Navigate } from 'react-router-dom';
 import Main from '../pages/main';
 import Home from '../pages/home/home';
 import Login from '../pages/login';
@@ -103,8 +103,6 @@ const routes = [
     ],
   },
 ];
-
-const router = createBrowserRouter(routes);
 
 // 创建一个自定义的 Router 组件，用于提供登录状态上下文
 // const AppRouter = () => {

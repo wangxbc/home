@@ -22,12 +22,8 @@ import { addBorderTheme } from '../../store/modules/borderTheme';
 import { addContentColor } from '../../store/modules/contentStoe';
 import { Link, To, useNavigate } from 'react-router-dom';
 import { RootState } from '../../store';
-import path from 'path';
-import { link } from 'fs';
 
 const { Header } = Layout;
-
-type ExtendedMenuTheme = AntdMenuTheme | '';
 
 const itemTwo = [
   {
