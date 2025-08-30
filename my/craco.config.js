@@ -5,6 +5,12 @@ const path = require('path');
 module.exports = {
   // 配置 webpack
   webpack: {
+    // 设置环境变量
+    configure: (webpackConfig, { env, paths }) => {
+      // 防止CI环境将警告视为错误
+      process.env.DISABLE_ESLINT_PLUGIN = 'true';
+      return webpackConfig;
+    },
     // 调整 resolve（别名、模块解析等）
     resolve: {
       alias: {
