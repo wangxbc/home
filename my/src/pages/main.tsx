@@ -21,7 +21,7 @@ const Main = () => {
           padding: '0',
           border: '0',
           outline: '0',
-          background: 'transparen',
+          background: 'transparent',
         }}
       >
         <CommonHeader></CommonHeader>
