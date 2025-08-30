@@ -5,8 +5,9 @@
       "src": "my/package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "my/build",
-        "buildCommand": "cd my && npm install --legacy-peer-deps && npm run build"
+        "buildCommand": "cd my && npm install --legacy-peer-deps && npm run build",
+        "outputDirectory": "build",
+        "installCommand": "cd my && npm install --legacy-peer-deps"
       }
     },
     {
@@ -33,6 +34,7 @@
     }
   ],
   "env": {
-    "NODE_ENV": "production"
+    "NODE_ENV": "production",
+    "DISABLE_ESLINT_PLUGIN": "true"
   }
 }
