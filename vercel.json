@@ -28,7 +28,7 @@
       }
     },
     {
-      "src": "^/(.*\.(js|css|png|jpg|jpeg|gif|ico|svg|woff2|woff|ttf|eot))$",
+      "src": "^/(.*\\.(js|css|png|jpg|jpeg|gif|ico|svg|woff2|woff|ttf|eot))$",
       "dest": "my/build/$1",
       "headers": {
         "Cache-Control": "public, max-age=86400"
