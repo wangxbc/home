@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+      "target": "ES6",
+      "module": "CommonJS",
+      "lib": ["DOM", "ESNext"],
+      "strict": true, // 严格类型检查（推荐）
+      "esModuleInterop": true, // 兼容 CommonJS 和 ES模块
+      "skipLibCheck": true, // 跳过第三方库类型检查（加快编译）
+      "forceConsistentCasingInFileNames": true, // 文件名大小写敏感
+      "jsx": "react-jsx", // 支持 JSX（React 17+ 推荐）
+      "moduleResolution": "Node",
+      "outDir": "build",
+      "baseUrl": ".",
+      "paths": {
+        "@/*": ["src/*"] // 自定义路径别名（如果有）
+      }
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "build"]
+  }

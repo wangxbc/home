@@ -1,0 +1,16 @@
+.cardStyle {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    width: 480px;
+}
+.myImg{
+    height: 50%;
+}
+.ant-card-body{
+    margin: 0%;
+    padding: 0%;
+    width: 430px;
+    height: 400px;
+}
+

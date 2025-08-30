@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "my/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "my/build",
+        "buildCommand": "cd my && npm install --legacy-peer-deps && npm run build"
+      }
+    },
+    {
+      "src": "server/api/index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "server/api/index.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "my/build/$1",
+      "headers": {
+        "Cache-Control": "public, max-age=86400"
+      }
+    },
+    {
+      "src": "^/[^.]+$",
+      "dest": "my/build/index.html",
+      "status": 200
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  }
+}

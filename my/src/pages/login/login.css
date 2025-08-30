@@ -1,0 +1,115 @@
+
+.flex.justify-center.items-center.h-screen.bg-gray-100 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    overflow-y: auto;
+}
+
+.bg-white.p-8.rounded.shadow-md.w-96 {
+    background-color: white;
+    padding: 3rem; 
+    border-radius: 0.75rem; 
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    width: 32rem; 
+    transition: all 0.3s ease;
+}
+
+
+.text-2xl.font-bold.mb-4 {
+    text-align: center;
+    margin-bottom: 1.5rem; 
+    color: #333;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.border.border-gray-300.p-2.mb-2.w-full.rounded {
+    width: 100%;
+    padding: 0.75rem; 
+    margin-bottom: 1rem; 
+    border: 1px solid #ccc;
+    border-radius: 0.375rem; 
+    outline: none;
+    transition: border-color 0.3s ease;
+    font-size: 1rem;
+}
+
+.border.border-gray-300.p-2.mb-2.w-full.rounded:focus {
+    border-color: #007bff;
+}
+
+.border.border-gray-300.p-2.mb-4.w-full.rounded {
+    width: 100%;
+    padding: 0.75rem; 
+    margin-bottom: 1.5rem; 
+    border: 1px solid #ccc;
+    border-radius: 0.375rem; 
+    outline: none;
+    transition: border-color 0.3s ease;
+    font-size: 1rem; 
+}
+
+.border.border-gray-300.p-2.mb-4.w-full.rounded:focus {
+    border-color: #007bff;
+}
+
+
+.bg-blue-500.text-white.p-2.rounded.w-full.hover:bg-blue-600 {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0.375rem; 
+    cursor: pointer;
+    padding: 0.75rem; 
+    width: 100%;
+    transition: background-color 0.3s ease;
+    font-size: 1rem; 
+}
+
+.bg-blue-500.text-white.p-2.rounded.w-full.hover:bg-blue-600:hover {
+    background-color: #0056b3;
+}
+
+
+.bg-green-500.text-white.p-2.rounded.w-full.hover:bg-green-600 {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 0.375rem; 
+    cursor: pointer;
+    padding: 0.75rem;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    font-size: 1rem; 
+}
+
+.bg-green-500.text-white.p-2.rounded.w-full.hover:bg-green-600:hover {
+    background-color: #218838;
+}
+
+
+.mt-4.text-center {
+    margin-top: 1.5rem; 
+    text-align: center;
+}
+
+.text-blue-500.cursor-pointer.ml-1 {
+    color: #007bff;
+    cursor: pointer;
+    margin-left: 0.5rem; 
+    transition: color 0.3s ease;
+    font-size: 1rem;
+}
+
+.text-blue-500.cursor-pointer.ml-1:hover {
+    color: #0056b3;
+}
+
+
+input[type="file"] {
+    margin-bottom: 1.5rem; 
+    font-size: 1rem; 
+}
