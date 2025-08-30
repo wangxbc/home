@@ -111,7 +111,7 @@ const items = [
     ),
   },
 ];
-const CommonHeader: React.FC<{}> = () => {
+const CommonHeader: React.FC<Record<string, never>> = () => {
   const navigate = useNavigate();
   const { myTheme } = useSelector((state: RootState) => state.myThemes);
   useSelector((state: RootState) => state.worldThemes);
