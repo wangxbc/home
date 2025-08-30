@@ -296,7 +296,6 @@ const CommonHeader = () => {
           selectedKeys={[current]}
           mode="horizontal"
           items={itemTwo}
-          theme={'' as ExtendedMenuTheme}
         />
         <Menu
           style={{
@@ -308,7 +307,6 @@ const CommonHeader = () => {
           selectedKeys={[current]}
           mode="horizontal"
           items={itemOne}
-          theme={'' as ExtendedMenuTheme}
         />
         <Dropdown menu={{ items }}>
           <Avatar size={50} src={userAvatar || require('../../assets/me.jpg')} />
