@@ -21,16 +21,23 @@
       "dest": "server/api/index.js"
     },
     {
-      "src": "^/[^.]+(?!\\\\.[^/]+$)(\\\\?.*)?$",
-      "dest": "my/build/index.html",
-      "status": 200
+      "src": "^/static/(.*)",
+      "dest": "my/build/static/$1",
+      "headers": {
+        "Cache-Control": "public, max-age=31536000"
+      }
     },
     {
-      "src": "/(.*)",
+      "src": "^/(.*\.(js|css|png|jpg|jpeg|gif|ico|svg|woff2|woff|ttf|eot))$",
       "dest": "my/build/$1",
       "headers": {
         "Cache-Control": "public, max-age=86400"
       }
+    },
+    {
+      "src": "^(.*)$",
+      "dest": "my/build/index.html",
+      "status": 200
     }
   ],
   "env": {
