@@ -11,7 +11,6 @@ import {
   ArrowRightOutlined,
 } from '@ant-design/icons';
 import { Menu, FloatButton, Layout, Avatar, Dropdown, Button, Divider, Space } from 'antd';
-import { MenuTheme as AntdMenuTheme } from 'antd/es/menu/MenuContext';
 import './commonHeader.css';
 import { addTheme } from '../../store/modules/themeStore';
 import { addWorldTheme } from '../../store/modules/worldStore';
