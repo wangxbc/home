@@ -24,7 +24,7 @@ const Main = () => {
           background: 'transparen',
         }}
       >
-        <CommonHeader />
+        <CommonHeader></CommonHeader>
         <MySider>{/* <MyCard /> */}</MySider>
         {/* <MyFooter/> */}
         <Outlet />
