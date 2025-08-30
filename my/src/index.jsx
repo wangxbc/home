@@ -26,17 +26,19 @@ class ErrorBoundary extends React.Component {
   render() {
     if (this.state.hasError) {
       return (
-        <div style={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          minHeight: '100vh',
-          backgroundColor: '#f0f2f5',
-          color: '#333',
-          fontSize: '16px',
-          textAlign: 'center',
-          padding: '20px'
-        }}>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            minHeight: '100vh',
+            backgroundColor: '#f0f2f5',
+            color: '#333',
+            fontSize: '16px',
+            textAlign: 'center',
+            padding: '20px',
+          }}
+        >
           <div>
             <h1 style={{ fontSize: '24px', marginBottom: '10px' }}>应用加载出错</h1>
             <p>请刷新页面或稍后再试</p>
