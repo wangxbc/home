@@ -21,7 +21,7 @@
       "dest": "server/api/index.js"
     },
     {
-      "src": "^/[^.]+(?!\.[^/]+$)(\?.*)?$",
+      "src": "^/[^.]+(?!\\\\.[^/]+$)(\\\\?.*)?$",
       "dest": "my/build/index.html",
       "status": 200
     },
